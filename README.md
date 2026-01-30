@@ -1,4 +1,3 @@
-# Kampot-resorts
 # Kampot Resorts Website - រចនាសម្ព័ន្ធឯកសារ
 
 ## រចនាសម្ព័ន្ធទាំងស្រុង (File Structure)

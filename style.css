@@ -1,0 +1,17 @@
+/* ========================================
+   KAMPOT RESORTS - MAIN STYLESHEET
+   ======================================== */
+
+/* Import all component stylesheets */
+@import url('css/fonts.css');
+@import url('css/reset.css');
+@import url('css/icons.css');
+@import url('css/header.css');
+@import url('css/hero.css');
+@import url('css/search.css');
+@import url('css/resorts.css');
+@import url('css/deals.css');
+@import url('css/contact.css');
+@import url('css/footer.css');
+@import url('css/responsive.css');
+@import url('css/booking-bar.css');

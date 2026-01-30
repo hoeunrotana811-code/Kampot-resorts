@@ -1,0 +1,160 @@
+/* ========================================
+   RESORT CARDS
+   ======================================== */
+
+.resort-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.resort-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.resort-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.resort-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resort-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.resort-info {
+    padding: 1.5rem;
+}
+
+.resort-name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.resort-location {
+    color: #666;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.resort-location i {
+    color: #667eea;
+}
+
+.resort-features {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+
+.feature-tag {
+    background: #f0f0f0;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: #555;
+}
+
+.resort-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #667eea;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.rating i {
+    color: #ffd700;
+    font-size: 0.9rem;
+}
+
+.rating-score {
+    background: #667eea;
+    color: white;
+    padding: 0.3rem 0.6rem;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+
+/* Styling for the card when it is 'boxed' or selected */
+.resort-card {
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.resort-card.selected {
+    border-color: #27ae60; /* Green box border */
+    background-color: #f0fff4; /* Light green background */
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Hide the checkmark by default */
+.selection-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #27ae60;
+    font-size: 24px;
+    background: white;
+    border-radius: 50%;
+    display: none;
+    z-index: 10;
+}
+
+/* Show checkmark when selected */
+.resort-card.selected .selection-badge {
+    display: block;
+}
+
+.select-resort-btn {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.resort-card.selected .select-resort-btn {
+    background: #27ae60;
+    content: "Selected";
+}

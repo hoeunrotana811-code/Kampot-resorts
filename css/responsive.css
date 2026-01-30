@@ -1,0 +1,33 @@
+/* ========================================
+   RESPONSIVE DESIGN (MOBILE)
+   ======================================== */
+
+@media (max-width: 768px) {
+    /* Search Box */
+    .search-box {
+        grid-template-columns: 1fr;
+    }
+
+    /* Hero Section */
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    /* Navigation */
+    .nav-links {
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+
+    /* Deal Cards */
+    .deal-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Contact Details */
+    .contact-details {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

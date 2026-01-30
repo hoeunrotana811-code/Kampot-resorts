@@ -1,0 +1,28 @@
+/* ========================================
+   HERO SECTION
+   ======================================== */
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                url('https://pix8.agoda.net/hotelImages/35507482/-1/1603eb5ef58466f4f3d05c8214296fe1.jpg?ce=0&s=1024x');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}

@@ -1,0 +1,41 @@
+/* ========================================
+   DEALS SECTION
+   ======================================== */
+
+.deals-section {
+    background: #f8f9fa;
+    padding: 4rem 0;
+}
+
+.deal-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.deal-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.deal-info p {
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.deal-discount {
+    background: #ff6b6b;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    white-space: nowrap;
+}
